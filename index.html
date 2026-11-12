@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>UTY Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="shader-bg"></canvas>
+    <div id="game-ui">
+        <div id="boss-area"><img id="boss-img" src="boss.png" alt="Boss"></div>
+        <div id="battle-box">
+            <img id="soul" src="soul.png" alt="Soul">
+        </div>
+        <div id="hud">
+            <span>CLOVER &nbsp; LV 1</span>
+            <span>HP <span id="hp-bar"><span id="hp-fill"></span></span> <span id="hp-text">20/20</span></span>
+        </div>
+        <div id="actions">
+            <button onclick="startTurn('fight')">[ FIGHT ]</button>
+            <button onclick="startTurn('act')">[ ACT ]</button>
+            <button onclick="startTurn('item')">[ ITEM ]</button>
+            <button onclick="startTurn('mercy')">[ MERCY ]</button>
+        </div>
+    </div>
+    <audio id="bgm" src="music.mp3" loop></audio>
+    <script src="game.js"></script>
+</body>
+</html>
